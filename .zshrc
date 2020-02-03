@@ -1,4 +1,3 @@
-cal -3
 command -v lsd &> /dev/null && alias ls='lsd --group-dirs first'
 command -v colorls &> /dev/null && alias ls='colorls --sd --gs'
 command -v htop &> /dev/null && alias top='htop'
@@ -58,8 +57,8 @@ PS1="%F{cyan} %~ >%F{blue}> %F{reset}"
 
 # ----- plugins -----
 PLUGINS_DIR=/usr/share/zsh/plugins/
-source $PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source $PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source $PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 autoload compinit && compinit
 
@@ -93,7 +92,7 @@ POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON=' '
 POWERLEVEL9K_VCS_COMMIT_ICON=' '
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%F{031}╭─'
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%F{031}╰%f '
-POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{196}  %F{172}$(whoami)%F{031}::%F{035}%m'
+POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{014}ﬦ  %F{172}$(whoami)%F{031}::%F{035}%m'
 POWERLEVEL9K_CUSTOM_OS_ICON_BACKGROUND=clear
 POWERLEVEL9K_CUSTOM_OS_ICON_FOREGROUND=172
 #// POWERLEVEL9K_<name-of-segment>_<state>_[BACKGROUND|FOREGROUND]
@@ -136,3 +135,10 @@ function find() {
 	fi
 }
 
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export TERM=xterm-256color
+source ~/antigen.zsh
+source ~/.antigenrc
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#9FF3AA,bold,underline"
+cal -3
