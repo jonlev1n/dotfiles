@@ -64,7 +64,7 @@ autoload compinit && compinit
 
 # -------------------------------- POWERLEVEL ---------------------------------
 
-
+POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
 POWERLEVEL9K_MODE=nerdfont-complete
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
