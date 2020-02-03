@@ -1,22 +1,8 @@
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias diff='diff --color=auto'
 command -v lsd &> /dev/null && alias ls='lsd --group-dirs first'
 command -v colorls &> /dev/null && alias ls='colorls --sd --gs'
 command -v htop &> /dev/null && alias top='htop'
 command -v gotop &> /dev/null && alias top='gotop -p'
 
-alias vi='vim'
-alias pacman='pacman --color=always'
-alias scss='scss --no-cache --quiet --sourcemap=none'
-alias xclip='xclip -selection c'
-
-
-
-export VISUAL=vim
-export EDITOR=$VISUAL
 
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
