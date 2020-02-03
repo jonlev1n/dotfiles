@@ -1,3 +1,4 @@
+cal -3
 command -v lsd &> /dev/null && alias ls='lsd --group-dirs first'
 command -v colorls &> /dev/null && alias ls='colorls --sd --gs'
 command -v htop &> /dev/null && alias top='htop'
