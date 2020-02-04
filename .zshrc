@@ -150,5 +150,6 @@ export LANG="en_US.UTF-8"
 export TERM=xterm-256color
 source ~/antigen.zsh
 source ~/.antigenrc
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#9FF3AA,bold,underline"
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c9e9c9,bold,underline"
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 cal -3
