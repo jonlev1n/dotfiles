@@ -91,12 +91,12 @@ POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON=' '
 POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON=' '
 POWERLEVEL9K_VCS_COMMIT_ICON="\uf417"
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%F{031}╭─'
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%F{031}╰%f '
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%F{031}╰  ﬦ%f '
 POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
 # POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{014}  %F{172}$(whoami)%F{014}::%F{035}%m' # alien
 # POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{014}  %F{172}$(whoami)%F{014}::%F{035}%m' #diamond
 # POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{014}\uf702  %F{172}$(whoami)%F{014}::%F{035}%m' #paw ?
-POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{196}  %F{172}$(whoami)%F{014}::%F{035}%m' #skull
+POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{196}  %F{172}jon%F{014}::%F{035}' #skull
 # POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{014}  %F{172}$(whoami)%F{014}::%F{035}%m' 
 #POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{014}ﬦ  %F{172}$(whoami)%F{014}::%F{035}%m'
 # POWERLEVEL9K_CUSTOM_OS_ICON='echo %F{014}  %F{172}$(whoami)%F{014}::%F{035}%m' 
@@ -115,7 +115,7 @@ POWERLEVEL9K_DIR_DEFAULT_FOREGROUND=232
 POWERLEVEL9K_DIR_ETC_FOREGROUND=232
 POWERLEVEL9K_DIR_NOT_WRITABLE_FOREGROUND=232
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_os_icon ssh root_indicator dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status background_jobs_joined time ram )
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time time ram )
 
 if [[ $(tty) == /dev/pts/* ]]; then
 	source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme;
@@ -142,7 +142,7 @@ function find() {
 	fi
 }
 
-plugins=(git git-extras gem bundler osx ruby rvm rails sudo sublime colorize history history-substring-search last-working-dir compleat zsh-completions zsh-history-substring-search zsh-autosuggestions zsh-syntax-highlighting zsh-syntax-highlighting-filetypes warhol)
+#plugins=(git git-extras gem bundler osx ruby rvm rails sudo sublime colorize history history-substring-search last-working-dir compleat zsh-completions zsh-history-substring-search zsh-autosuggestions zsh-syntax-highlighting zsh-syntax-highlighting-filetypes warhol)
 
 
 export LC_ALL="en_US.UTF-8"
@@ -150,6 +150,7 @@ export LANG="en_US.UTF-8"
 export TERM=xterm-256color
 source ~/antigen.zsh
 source ~/.antigenrc
+source ~/.oh-my-zsh/plugins/zsh-vscode.plugin.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c9e9c9,bold,underline"
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 cal -3
