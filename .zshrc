@@ -150,6 +150,6 @@ export LANG="en_US.UTF-8"
 export TERM=xterm-256color
 source ~/antigen.zsh
 source ~/.antigenrc
-source ~/.oh-my-zsh/plugins/zsh-vscode.plugin.zsh
+source ~/.oh-my-zsh/plugins/vscode/vscode.plugin.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c9e9c9,bold,underline"
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
